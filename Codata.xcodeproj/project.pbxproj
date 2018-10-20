@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		935C1120217B83C5003E759F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C111F217B83C5003E759F /* AppDelegate.swift */; };
-		935C1122217B83C5003E759F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C1121217B83C5003E759F /* ViewController.swift */; };
+		935C1122217B83C5003E759F /* ListeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C1121217B83C5003E759F /* ListeController.swift */; };
 		935C1125217B83C5003E759F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935C1123217B83C5003E759F /* Main.storyboard */; };
 		935C1128217B83C5003E759F /* Codata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 935C1126217B83C5003E759F /* Codata.xcdatamodeld */; };
 		935C112A217B83C6003E759F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935C1129217B83C6003E759F /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		935C111C217B83C5003E759F /* Codata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935C111F217B83C5003E759F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		935C1121217B83C5003E759F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935C1121217B83C5003E759F /* ListeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeController.swift; sourceTree = "<group>"; };
 		935C1124217B83C5003E759F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		935C1127217B83C5003E759F /* Codata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Codata.xcdatamodel; sourceTree = "<group>"; };
 		935C1129217B83C6003E759F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,14 +58,13 @@
 		935C111E217B83C5003E759F /* Codata */ = {
 			isa = PBXGroup;
 			children = (
-				935C1134217B8727003E759F /* Controller */,
 				935C111F217B83C5003E759F /* AppDelegate.swift */,
-				935C1121217B83C5003E759F /* ViewController.swift */,
-				935C1123217B83C5003E759F /* Main.storyboard */,
+				935C1138217B8A68003E759F /* Model */,
+				935C1137217B8A5D003E759F /* View */,
+				935C1134217B8727003E759F /* Controller */,
+				935C1139217B8A72003E759F /* InterfaceBuilder */,
 				935C1129217B83C6003E759F /* Assets.xcassets */,
-				935C112B217B83C6003E759F /* LaunchScreen.storyboard */,
 				935C112E217B83C6003E759F /* Info.plist */,
-				935C1126217B83C5003E759F /* Codata.xcdatamodeld */,
 			);
 			path = Codata;
 			sourceTree = "<group>";
@@ -73,9 +72,34 @@
 		935C1134217B8727003E759F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				935C1121217B83C5003E759F /* ListeController.swift */,
 				935C1135217B87F4003E759F /* MaTabBar.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		935C1137217B8A5D003E759F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935C1138217B8A68003E759F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				935C1126217B83C5003E759F /* Codata.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		935C1139217B8A72003E759F /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				935C112B217B83C6003E759F /* LaunchScreen.storyboard */,
+				935C1123217B83C5003E759F /* Main.storyboard */,
+			);
+			path = InterfaceBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935C1128217B83C5003E759F /* Codata.xcdatamodeld in Sources */,
-				935C1122217B83C5003E759F /* ViewController.swift in Sources */,
+				935C1122217B83C5003E759F /* ListeController.swift in Sources */,
 				935C1120217B83C5003E759F /* AppDelegate.swift in Sources */,
 				935C1136217B87F4003E759F /* MaTabBar.swift in Sources */,
 			);
