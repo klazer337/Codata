@@ -13,6 +13,7 @@
 		935C1128217B83C5003E759F /* Codata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 935C1126217B83C5003E759F /* Codata.xcdatamodeld */; };
 		935C112A217B83C6003E759F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935C1129217B83C6003E759F /* Assets.xcassets */; };
 		935C112D217B83C6003E759F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935C112B217B83C6003E759F /* LaunchScreen.storyboard */; };
+		935C1136217B87F4003E759F /* MaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C1135217B87F4003E759F /* MaTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		935C1129217B83C6003E759F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935C112C217B83C6003E759F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935C112E217B83C6003E759F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935C1135217B87F4003E759F /* MaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		935C111E217B83C5003E759F /* Codata */ = {
 			isa = PBXGroup;
 			children = (
+				935C1134217B8727003E759F /* Controller */,
 				935C111F217B83C5003E759F /* AppDelegate.swift */,
 				935C1121217B83C5003E759F /* ViewController.swift */,
 				935C1123217B83C5003E759F /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				935C1126217B83C5003E759F /* Codata.xcdatamodeld */,
 			);
 			path = Codata;
+			sourceTree = "<group>";
+		};
+		935C1134217B8727003E759F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				935C1135217B87F4003E759F /* MaTabBar.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				935C1128217B83C5003E759F /* Codata.xcdatamodeld in Sources */,
 				935C1122217B83C5003E759F /* ViewController.swift in Sources */,
 				935C1120217B83C5003E759F /* AppDelegate.swift in Sources */,
+				935C1136217B87F4003E759F /* MaTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

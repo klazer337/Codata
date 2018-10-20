@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="488.40579710144931" y="-668.97321428571422"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Ma Tab Bar-->
         <scene sceneID="fjQ-uM-lmw">
             <objects>
-                <tabBarController id="iLp-9t-bGF" sceneMemberID="viewController">
+                <tabBarController id="iLp-9t-bGF" customClass="MaTabBar" customModule="Codata" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CWN-39-tqT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
