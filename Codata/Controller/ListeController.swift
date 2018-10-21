@@ -15,7 +15,7 @@ class ListeController: UIViewController {
     @IBOutlet weak var holderView: UIView!
     @IBOutlet weak var nameTF: UITextField!
     
-    var listes: [Liste] = []
+    var listes: [Liste] = []    // Array de liste vide au début
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,9 @@ class ListeController: UIViewController {
     }
     
     func updateListe() {
-        coreDataHelper().getList { (listes) in
+        CoreDataHelper().getList { (listes) in
             if listes != nil {
-                DispatchQueue.main.async {
+                DispatchQueue.main.async {              // Revenir sur la queue principale
                     self.listes = listes!
                     self.tableView.reloadData()
                 }
@@ -35,7 +35,7 @@ class ListeController: UIViewController {
 
     
     @IBAction func addListe(_ sender: UIButton){
-        coreDataHelper().saveListe(nameTF.text)
+        CoreDataHelper().saveListe(nameTF.text)
         updateListe()
     }
 }

@@ -9,9 +9,10 @@
 import UIKit
 import CoreData
 
+// Nécessaire pour la récupération des données
 typealias ListeCompletion = (_ listes: [Liste]?) -> Void
 
-class coreDataHelper {
+class CoreDataHelper {
     
     // Récuprérer base CoreData
     private let appDel = UIApplication.shared.delegate as! AppDelegate
@@ -40,8 +41,8 @@ class coreDataHelper {
     }
     
     func getList(completion: ListeCompletion?) {
-        let fetchRequest: NSFetchRequest<Liste> = Liste.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)             // classement de la liste (façon de trier les données
+        let fetchRequest: NSFetchRequest<Liste> = Liste.fetchRequest()                  // Requête des éléments Liste dans CoreData
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)             // Tri-classement de la liste (façon de trier les données
         fetchRequest.sortDescriptors = [sortDescriptor]                                 // On donne cette façon de trier les données à la requête
         do {
             let listes = try context.fetch(fetchRequest)
@@ -49,7 +50,7 @@ class coreDataHelper {
                 print(l.name)
             }
             completion?(listes)
-        } catch {
+        } catch {                                               // En cas d'erreur
             completion?(nil)
             print(error.localizedDescription)
         }
