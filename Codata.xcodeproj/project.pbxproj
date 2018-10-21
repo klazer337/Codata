@@ -15,6 +15,9 @@
 		935C112D217B83C6003E759F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935C112B217B83C6003E759F /* LaunchScreen.storyboard */; };
 		935C1136217B87F4003E759F /* MaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C1135217B87F4003E759F /* MaTabBar.swift */; };
 		935C113B217B8EC9003E759F /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C113A217B8EC9003E759F /* CoreDataHelper.swift */; };
+		935C113D217CA25E003E759F /* ListeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C113C217CA25E003E759F /* ListeCell.swift */; };
+		935C113F217CA27E003E759F /* ViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C113E217CA27E003E759F /* ViewShadow.swift */; };
+		935C1141217CA77C003E759F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C1140217CA77C003E759F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		935C112E217B83C6003E759F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935C1135217B87F4003E759F /* MaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaTabBar.swift; sourceTree = "<group>"; };
 		935C113A217B8EC9003E759F /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		935C113C217CA25E003E759F /* ListeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeCell.swift; sourceTree = "<group>"; };
+		935C113E217CA27E003E759F /* ViewShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShadow.swift; sourceTree = "<group>"; };
+		935C1140217CA77C003E759F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		935C1137217B8A5D003E759F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				935C113C217CA25E003E759F /* ListeCell.swift */,
+				935C113E217CA27E003E759F /* ViewShadow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +100,7 @@
 			children = (
 				935C1126217B83C5003E759F /* Codata.xcdatamodeld */,
 				935C113A217B8EC9003E759F /* CoreDataHelper.swift */,
+				935C1140217CA77C003E759F /* Extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				935C113B217B8EC9003E759F /* CoreDataHelper.swift in Sources */,
+				935C113D217CA25E003E759F /* ListeCell.swift in Sources */,
+				935C113F217CA27E003E759F /* ViewShadow.swift in Sources */,
+				935C1141217CA77C003E759F /* Extensions.swift in Sources */,
 				935C1128217B83C5003E759F /* Codata.xcdatamodeld in Sources */,
 				935C1122217B83C5003E759F /* ListeController.swift in Sources */,
 				935C1120217B83C5003E759F /* AppDelegate.swift in Sources */,

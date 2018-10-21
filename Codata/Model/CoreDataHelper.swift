@@ -55,4 +55,18 @@ class CoreDataHelper {
             print(error.localizedDescription)
         }
     }
+    
+    // Suppression d'un élément dans CoreData
+    func deleteListe(_ liste: Liste) {
+        context.delete(liste)
+        do {
+            try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
+    
+    
 }

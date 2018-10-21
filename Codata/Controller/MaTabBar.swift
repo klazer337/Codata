@@ -18,7 +18,7 @@ class MaTabBar: UITabBarController {
         //tabBar.barTintColor = .yellow                     // Changer le background color de la tabBar
         
         // TabBar transparente
-        tabBar.barTintColor = .clear
-        tabBar.backgroundImage = UIImage()               
+        //tabBar.barTintColor = .clear                      // TabBar transparente
+        //tabBar.backgroundImage = UIImage()               
     }
 }
